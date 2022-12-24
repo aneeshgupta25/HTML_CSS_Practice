@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+                background-image: url("https://img.freepik.com/free-vector/summer-forest-glade-with-green-grass_107791-5602.jpg?w=2000");
+                background-size: cover;
+        }
+        * {
+            box-sizing: border-box;
+        }
+        .navbar {
+            position: relative;
+            background-color: rgb(255, 174, 0);
+            height: 110px;
+            width: fit-content;
+            border: 5px solid black;
+            border-radius: 20px;
+            margin: auto;
+            margin-top: 40px;
+        }
+        .navbar-content {
+            width: 260px;
+            float: left;
+            height: 80px;
+            margin: 10px 10px;
+            border-radius: 20px;
+            background-color: white;
+            cursor: pointer;
+        }
+        .navbar-content:hover {
+            background-color: #9A581F;
+            color: white;
+        }
+        p {
+            font-weight: bold;
+            font-size: 25px;
+            text-align: center;
+        }
+        .dropdown {
+            display: none;
+            position: absolute;
+            z-index: 10;
+        }
+        .dropdown-container:hover .dropdown{
+            display: block;
+            color: black;
+            background-color:#E9A228; 
+            border-radius: 10px;
+            top: 90 px;
+            padding: 10px;
+            border: 3px solid black;
+        }
+        .dropdown div {
+            border-radius: 20px;
+            background-color: white;
+            height: fit-content;
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0px;
+        }
+        .dropdown div p {
+            margin: 0px;
+        }
+        .dropdown div:hover {
+            background-color: #9A581F;
+            color: white;
+        }
+        #navbar-heading {
+            color: #E9A228;
+            font-style: italic;
+            border: 5px solid #fff;
+            background-color: rgb(41, 18, 35);
+            border-radius: 20px;
+            height: fit-content;
+            padding: 0px;
+            width: fit-content;
+            margin: auto;
+            margin-top: 20px;
+        }
+        #navbar-heading p {
+            font-size: 40px;
+            margin: 25px;
+        }
+        #div1, #div2, #div3 {
+            position: absolute;
+            width: 30%;
+            height: 200px;
+            margin: auto;
+            border-radius: 25px;
+            left: 0px;
+            border: 3px solid white;
+            right: 0px;
+        }
+        #position-div {
+            position: relative;
+            margin-top: 100px;
+            background-color: black;
+        }
+        #div1 {
+            background-color: #F2CB24;
+            z-index: 3;
+            top: 100px;
+        }
+        #div2 {
+            background-color: #2E4416;
+            right: 40%;
+            z-index: 1;
+        }
+        #div3 {
+            background-color: #2E4416;
+            left: 40%;
+            z-index: 2;
+        }
+        #div1 p {
+            font-size: 40px;
+            margin-top: 50px;
+            font-style: italic;
+        }
+        #div2 p, #div3 p {
+            color: white;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar-heading">
+        <p>Navigation Menu with Drop-Down...</p>
+    </div>
+    <div class="navbar" >
+        <div class="navbar-content">
+            <p>HOME</p>
+        </div>
+        <div class="navbar-content dropdown-container">
+            <p>CHALLENGES</p>
+            <div class="dropdown">
+                <div><p>FRONT END</p></div>
+                <div><p>CYBERSECURITY</p></div>
+                <div><p>DATA SCIENCE</p></div>
+            </div>
+        </div>
+        <div class="navbar-content">
+            <p>SPRINT-1</p>
+        </div>
+        <div class="navbar-content">
+            <p>NANODEGREE</p>
+        </div>
+    </div>
+    <!-- position -->
+    <div id="navbar-heading" style="margin-top: 60px;">
+        <p>CSS POSITIONING...</p>
+    </div>
+    <div id="position-div">
+        <div id="div1">
+            <p>Welcome to the Course!!</p>
+        </div>
+        <div id="div2">
+            <p>This is an absolute positioned Div container</p>
+        </div>
+        <div id="div3">
+            <p>This is an absolute positioned Div container</p>
+        </div>
+    </div>
+</body>
+</html>
